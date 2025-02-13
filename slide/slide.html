@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Dynamic Slide</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.slider-container {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  animation: slide 20s linear infinite;
+}
+
+.slide-item {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slider-container:hover .slider {
+  animation-play-state: paused;
+}
+.slide-item {
+  flex-direction: column; /* Aligne les enfants verticalement */
+  gap: 10px; /* Espace entre l'icône et le titre */
+}
+
+.slide-item i {
+  font-size: 50px; /* Agrandit les icônes */
+  color: #ffffff; /* Couleur des icônes */
+  margin-bottom: 10px; /* Espace entre l'icône et le texte */
+}
+.slide-item {
+  display: flex; /* Active le flexbox */
+  flex-direction: column; /* Positionne les enfants verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  gap: 10px; /* Espace entre l'icône et le titre */
+}
+.slide-item span {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.slide-item i {
+  font-size: 60px; /* Agrandit les icônes */
+  color: #ffffff; 
+  transition: transform 0.3s ease, color 0.3s ease;/* Couleur blanche pour les icônes */
+}
+.slide-item:hover i, 
+.slide-item:hover span {
+  transform: scale(1.2); /* Agrandit les éléments */
+  color: rgb(0, 247, 255); /* Change la couleur des icônes et du texte */
+}
+
+.slide-item span {
+  font-size: 18px; /* Taille du texte */
+  font-weight: bold; /* Texte en gras */
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide-item">
+        <i class="bx bxl-visual-studio"></i>
+        <span>VsCode</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-html5"></i>
+        <span>HTML</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-css3"></i>
+        <span>CSS</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-bootstrap"></i>
+        <span>Bootstrap</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-php"></i>
+        <span>PHP</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-react"></i>
+        <span>React</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-javascript"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxs-data"></i>
+        <span>SQL</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-mongodb"></i>
+        <span>MongoDB</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-visual-studio"></i>
+        <span>VsCode</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-html5"></i>
+        <span>HTML</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-css3"></i>
+        <span>CSS</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-bootstrap"></i>
+        <span>Bootstrap</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-php"></i>
+        <span>PHP</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-react"></i>
+        <span>React</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-javascript"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-data"></i>
+        <span>SQL</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-mangodb"></i>
+        <span>MongoDB</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-visual-studio"></i>
+        <span>VsCode</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-html5"></i>
+        <span>HTML</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-css3"></i>
+        <span>CSS</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-bootstrap"></i>
+        <span>Bootstrap</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-php"></i>
+        <span>PHP</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-react"></i>
+        <span>React</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-javascript"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-data"></i>
+        <span>SQL</span>
+      </div>
+      <div class="slide-item">
+        <i class="bx bxl-mangodb"></i>
+        <span>MongoDB</span>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+</html>

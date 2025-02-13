@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+ul,a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Utility classes */
+.primary-text{
+    color: tomato;
+}
+.btn-third {
+    background-color: #383848;
+    color: white;
+    display: block;
+    margin: 20px auto 0;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary {
+    color: white;
+    border: 1px solid white;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.btn-primary:hover {
+    border: 1px solid white;
+    color: rgb(5, 44, 84);
+    border: 1px solid rgb(0, 0, 0);
+}
+.btn-secondary {
+    color: white;
+    background: #383848;
+    margin-top:2rem ;
+}
+.btn-secondary:hover {
+    border: 1px solid white;
+    color: rgb(5, 44, 84);
+}
+
+/* Header */
+header{
+    height: 100vh;
+    background: url(images/bckg.png) no-repeat center center/cover ;
+    position: relative;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+}
+#navbar img {
+    width: 100px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 22px;
+}
+#navbar img:hover {
+    cursor: pointer;
+}
+
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+#navbar ul li a {
+    padding:15px 20px ;
+    color: white;
+    font-weight: 600;
+}
+#navbar ul li a:hover{
+    color: rgb(5, 44, 84);
+}
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    height: 60%;
+    margin-left: 7%;
+}
+header .content h2{
+    font-size: 40px;
+    color: white;
+}
+header .content h1{
+    font-size: 40px;
+    color: rgb(5, 44, 84);
+}
+
+header .content p{
+    margin: 20px 0 40px;
+    color: white;
+}
+header .content img{
+    width: 300px;
+    color: white;
+}
+header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.704);
+}
+header *{
+    z-index: 10;
+}
+/* About section */
+.container hr {
+  border-radius: 8px;
+  background-color: #383848;
+  width: 150px;
+  height: 7px;
+  margin: 10px 43%;
+  text-align: center;
+}
+#about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c1c1c1;
+}
+
+#about .title,
+#offers .title,
+#menu .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#about h2,
+#offers h2,
+#offers h2 {
+    font-size: 40px;
+    margin-bottom:20px;
+}
+#about h2,
+#menu h2{
+    color: #383848;
+}
+
+#about .title p,
+#menu .title p {
+    font-size: 14px;
+    color: #626262;
+    font-weight: 600;
+}
+
+#about .about-content {
+    display: flex;
+    justify-content: space-between;
+}
+#about .about-content img {
+    width: 300px;
+    border-radius: 20px;
+    margin-top: -50px;
+}
+#about .about-content p{
+    color: #8c8c8c;
+    margin-left: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+#about a {
+  margin-left: 17%;
+}
+/* About end */
+/* show section */
+#show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: url(images/back3.png) no-repeat center center/cover ;
+  color: #f0f0f2;
+}
+
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fixed-div {
+  margin-top: 10%;
+  position: absolute;
+  background: transparent; 
+  border: 2px solid rgba(255,255,255, .2) ;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #f0f0f2;
+  padding: 20px 40px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 85%;
+  width: 65%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.fixed-div h2{
+  margin-bottom: 20px;
+}
+.fixed-div hr{
+  border-radius: 8px;
+  background-color: #f0f0f2;
+  width: 150px;
+  height: 7px;
+  margin: 10px 43%;
+  text-align: center;
+}
+.fixed-div p{
+  margin: 10% 0;
+}
+#show img {
+  width: 60%;
+  margin: 30px 0px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33.33% { transform: translateX(-100%); }
+  66.66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+
+
+/*show end */
+/* Offers start */
+#offers {
+  height: auto; /* Remplace 80vh si le contenu dépasse la hauteur */
+  display: flex;
+  justify-content: center;
+  background: #c1c1c1 center center/cover fixed;
+  padding: 50px 0;
+  color: #121212;
+  flex-direction: column; /* Pour aligner correctement les éléments verticalement */
+}
+
+#offers h2 {
+  color: #121212;
+  text-align: center;
+}
+
+#offers .title p {
+  color: #121212;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.offers-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 10%;
+  gap: 30px; /* Ajoute un espace uniforme entre les éléments */
+}
+
+.projet {
+  flex: 0 0 45%; /* Chaque projet occupe 45% de la largeur, deux par ligne */
+  display: flex;
+  justify-content: center;
+}
+/* Conteneur de l'image avec position relative */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%; /* Assurez-vous que l'image reste responsive */
+  height: auto;
+}
+
+/* Image principale */
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Effet d'opacité sur l'image lors du survol */
+.image-container:hover img {
+  opacity: 0.3;
+  transform: scale(1.1); /* Optionnel, pour agrandir légèrement l'image */
+}
+
+/* Overlay (texte + animation) */
+.overlay {
+  position: absolute;
+  bottom: 0; /* Position de départ pour l'animation */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+  
+  /* Caché par défaut */
+  opacity: 0;
+  transform: translateY(30%); /* Le texte est légèrement décalé vers le bas */
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+/* Afficher l'overlay au survol */
+.image-container:hover .overlay {
+  opacity: 1; /* Le texte devient visible */
+  transform: translateY(0); /* Le texte remonte à sa position normale */
+}
+ .image-container p {
+  margin-right: 15px;
+  align-items: center;
+ }
+/* Responsive : Une image par ligne pour les petits écrans */
+@media (max-width: 768px) {
+  .projet {
+      flex: 0 0 100%; /* Chaque projet occupe toute la largeur */
+  }
+}
+
+/* Projets animés depuis le haut */
+.from-top {
+  opacity: 0;
+  transform: translateY(-50px); /* Part du haut */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Projets animés depuis le bas */
+.from-bottom {
+  opacity: 0;
+  transform: translateY(50px); /* Part du bas */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Lorsqu'un élément devient visible */
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Reprend sa position normale */
+}
+
+
+/* Offers end */
+
+/* Contact Section start */
+#contact {
+  background: #121212;
+  padding: 5rem 0;
+  color: #e3e2dd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 70%;
+}
+
+#contact .contact-info h2 {
+  font-size: 36px; /* Augmente la taille du titre */
+  color: #e3e2dd;
+  margin-bottom: 20px;
+  text-align: center; /* Centrer le texte */
+}
+
+#contact .contact-info .linkk {
+  display: flex;
+  flex-wrap: wrap; /* Permet d'avoir 2 liens par ligne */
+  justify-content: center;
+  gap: 30px; /* Espacement entre les liens */
+  padding: 20px 0;
+}
+
+#contact .contact-info a {
+  flex: 0 0 45%; /* Chaque lien occupe 45% de la largeur, pour 2 par ligne */
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #e3e2dd;
+  text-decoration: none;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+#contact .contact-info a:hover {
+  color: rgb(5, 44, 84); /* Couleur au survol */
+}
+
+#contact .contact-info a i {
+  font-size: 24px; /* Augmente la taille des icônes */
+  color: #fff;
+  background: #282828;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.6s ease-in;
+}
+
+#contact .contact-info a:hover i {
+  background: rgb(5, 44, 84); /* Change la couleur d'arrière-plan des icônes au survol */
+  color: #121212;
+  transform: scale(1.05);
+}
+.title hr{
+  border-radius: 8px;
+  width: 167px;
+  height: 7px;
+  margin: 10px 43%;
+  text-align: center;
+}
+
+.arrow {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.arrow a {
+  font-size: 30px; /* Réduit la taille de l'icône */
+  color: #fff;
+  font-weight: bolder;
+  transition: 0.3s ease;
+  background-color: #282828;
+  border-radius: 50%; /* Garder un cercle autour de l'icône */
+  padding: 8px; /* Ajuste le padding pour diminuer la taille du cercle */
+}
+
+.arrow a:hover {
+  color: #282828;
+  background-color: rgb(5, 44, 84);
+  transform: scale(1.05);
+}
+
+  /* Contact Section End */
+/* footer */
+#footer{
+  background: url(images/back3.png) no-repeat  center/cover ;    text-align: center;
+  color: white;
+  padding: 20px 0;
+  font-size: 14px;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+}
+
+
+
+i {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Animation - State Before Scrolling */
+.about-text {
+  opacity: 0;
+  transform: translateX(100px); /* Déplace vers la droite */
+  transition: all 0.4s ease-in-out;
+}
+.about-img {
+  opacity: 0;
+  transform: translateX(-100px); /* Déplace vers la gauche */
+  transition: all 0.4s ease-in-out;
+}
+
+
+/* Animation - State After Scrolling */
+.about-visible .about-img, 
+.about-visible .about-text {
+  opacity: 1;
+  transform: translateX(0); /* Retourne à la position normale */
+}
+
+
+/* Initial state for pizza and tacos images */
+.image1, .image2 {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Add specific animation for tacos coming from the right */
+.image2 {
+  transform: translateX(100%);
+}
+
+/* When images become visible */
+.image-visible .image1 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.image-visible .image2 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+/* slide css start */
+.slider-container {
+  width: 65%;
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 45%;
+  margin-bottom: 10%;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  animation: slide 20s linear infinite;
+  background-color: transparent;
+}
+
+.slide-item {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slider-container:hover .slider {
+  animation-play-state: paused;
+  cursor: grabbing;
+}
+.slide-item {
+  flex-direction: column; /* Aligne les enfants verticalement */
+  gap: 10px; /* Espace entre l'icône et le titre */
+}
+
+.slide-item i {
+  font-size: 50px; /* Agrandit les icônes */
+  color: #ffffff; /* Couleur des icônes */
+  margin-bottom: 10px; /* Espace entre l'icône et le texte */
+}
+.slide-item {
+  display: flex; /* Active le flexbox */
+  flex-direction: column; /* Positionne les enfants verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  gap: 10px; /* Espace entre l'icône et le titre */
+}
+.slide-item span {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.slide-item i {
+  font-size: 60px; /* Agrandit les icônes */
+  color: #ffffff; 
+  transition: transform 0.3s ease, color 0.3s ease;/* Couleur blanche pour les icônes */
+}
+.slide-item:hover i, 
+.slide-item:hover span {
+  transform: scale(1.2); /* Agrandit les éléments */
+  color: #b669ff; /* Change la couleur des icônes et du texte */
+}
+
+.slide-item span {
+  font-size: 18px; /* Taille du texte */
+  font-weight: bold; /* Texte en gras */
+}

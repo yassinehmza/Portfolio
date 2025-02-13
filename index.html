@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="icon" href="images/Zayna.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/logo1.png">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header start -->
+    <header>
+        <div id="navbar">
+            <a href="index.html"><img src="images/logo1.png" alt="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#show">Technologies</a></li>
+                    <li><a href="#offers">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="images/monCV.pdf" target="_blank">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="text"></div>
+            <h2>Bonjour, c'est  </h2>
+            <h1>Hamza Yassine</h1>
+            <h2>Je suis <span class="multiple-text" style="color: rgb(5, 44, 84);"></span></h2>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                const typed = new Typed('.multiple-text', {
+                    strings: ['full-stack developer', 'front-end developer', 'back-end developer'],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    backDelay: 1000,
+                    loop: true
+                });
+            </script>
+        </div>
+    </header>
+    <!-- header end -->
+    <main>
+        <!-- About Start -->
+        <section id="about">
+            <div class="container">
+               <div class="title">
+                    <h2>Sur Moi</h2>
+                    <hr>
+               </div> 
+               <div class="about-content">
+                    <img src="images/3.png" alt="À propos" class="about-img">
+                    <div class="about-text">
+                        <p>Je suis étudiant en deuxième année de développement full-stack,
+                              passionné par le monde de la programmation et des technologies.
+                              J'aime explorer à la fois le développement front-end et back-end, 
+                              car je prends plaisir à créer des expériences utilisateur fluides
+                              et à résoudre des problèmes complexes. Mon parcours dans ce domaine est
+                              guidé par une curiosité constante d'apprendre,
+                              d'innover et de concevoir des solutions numériques impactantes. 
+                              Je m'efforce chaque jour d'améliorer mes compétences pour transformer ma passion en une carrière réussie dans le secteur technologique.
+                       </p>
+                       <a href="images/monCV.pdf" target="_blank" class="btn btn-secondary">Voir Le CV</a>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <!-- about end -->
+        <!-- show start -->
+        <div id="show">
+            <!-- Fixed Div -->
+            <div class="fixed-div">
+                <h2 >Technologies</h2><hr>
+                    <p>
+                    Je suis étudiant en deuxième année de développement full-stack, passionné par la création et l'optimisation
+                     de solutions numériques. Mon parcours m'a permis de travailler avec plusieurs technologies essentielles du domaine,
+                      notamment HTML, CSS et JavaScript pour le développement front-end. Côté back-end, j'utilise PHP et Laravel pour
+                concevoir des applications robustes, tout en exploitant des bases de données comme SQL et MongoDB pour la gestion
+                   des données. Je maîtrise également React pour développer des interfaces dynamiques et modernes.
+                   Enfin, j'applique des concepts de modélisation avec UML pour planifier et structurer mes projets. 
+                   Mon objectif est d'allier ces compétences pour créer des solutions performantes et innovantes.</p>
+            </div>
+            <!-- slide start -->
+            <div class="slider-container">
+                <div class="slider">
+                  <div class="slide-item">
+                    <i class="bx bxl-visual-studio"></i>
+                    <span>VsCode</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-html5"></i>
+                    <span>HTML</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-css3"></i>
+                    <span>CSS</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-bootstrap"></i>
+                    <span>Bootstrap</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-php"></i>
+                    <span>PHP</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-react"></i>
+                    <span>React</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-javascript"></i>
+                    <span>JavaScript</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxs-data"></i>
+                    <span>SQL</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-mongodb"></i>
+                    <span>MongoDB</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-figma"></i>
+                    <span>Figma</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-visual-studio"></i>
+                    <span>VsCode</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-html5"></i>
+                    <span>HTML</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-css3"></i>
+                    <span>CSS</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-bootstrap"></i>
+                    <span>Bootstrap</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-php"></i>
+                    <span>PHP</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-react"></i>
+                    <span>React</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-javascript"></i>
+                    <span>JavaScript</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-data"></i>
+                    <span>SQL</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-mangodb"></i>
+                    <span>MongoDB</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-visual-studio"></i>
+                    <span>VsCode</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-html5"></i>
+                    <span>HTML</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-css3"></i>
+                    <span>CSS</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-bootstrap"></i>
+                    <span>Bootstrap</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-php"></i>
+                    <span>PHP</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-react"></i>
+                    <span>React</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-javascript"></i>
+                    <span>JavaScript</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-data"></i>
+                    <span>SQL</span>
+                  </div>
+                  <div class="slide-item">
+                    <i class="bx bxl-mangodb"></i>
+                    <span>MongoDB</span>
+                  </div>
+                </div>
+            </div>
+              <!-- slide end -->
+        </div>
+        <!-- show end -->
+        <!-- Offres start -->
+        <section id="offers">
+            <div class="container">
+              <div class="title">
+                <h2 class="offre-titre">Mes Projets</h2>
+                <hr>
+              </div>
+              <div class="offers-items">
+                <!-- Premier projet -->
+                <div class="projet from-top">
+                  <a href="#">
+                    <div class="image-container">
+                      <img src="images/projet1.png" alt="chambre">
+                      <div class="overlay">
+                        <p><span style="color: bisque; font-weight: bolder;">MTD GYM</span> Votre espace dédié à la performance et au bien-être, 
+                          alliant entraînement de qualité et motivation sans limites .</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+          
+                <!-- Deuxième projet -->
+                <div class="projet from-top">
+                  <a href="#">
+                    <div class="image-container">
+                      <img src="images/projet2.png" alt="chambre">
+                      <div class="overlay">
+                        <p><span style="color: greenyellow;font-weight: bolder;">ProLearn</span> La plateforme qui transforme l’apprentissage en une expérience 
+                          interactive et efficace pour tous.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+          
+                <!-- Troisième projet -->
+                <div class="projet from-bottom">
+                  <a href="#">
+                    <div class="image-container">
+                      <img src="images/projet3.png" alt="chambre">
+                      <div class="overlay">
+                        <p><span style="color: tomato; font-weight: bolder;">Snake Game</span> Une version moderne du jeu classique que tout le monde adore!</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+          
+                <!-- Quatrième projet -->
+                <div class="projet from-bottom">
+                  <a href="#">
+                    <div class="image-container">
+                      <img src="images/projet4.png" alt="chambre">
+                      <div class="overlay">
+                        <p><span style="color: red; font-weight: bolder;">Almontakhab</span> : Suivez toute l’actualité de l’équipe nationale en temps réel.
+                             Résultats, analyses et exclusivités, tout est ici !</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </section>
+          
+        <script>
+        // Fonction pour ajouter la classe "visible" lorsque l'élément entre dans le viewport
+                const observer = new IntersectionObserver(
+                  (entries, observer) => {
+                    entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target); // On arrête d'observer après l'animation
+                      }
+                    });
+                  },
+                  { threshold: 0.2 } // Le seuil indique à quel moment l'élément doit être visible pour déclencher l'animation
+                );
+                
+                // Sélectionner tous les éléments à animer
+                const projets = document.querySelectorAll(".projet.from-top, .projet.from-bottom");
+                
+                // Observer chaque projet
+                projets.forEach((projet) => {
+                  observer.observe(projet);
+                });
+
+        </script>     
+        <!-- Offres end -->
+         <!-- Contact Section Start -->
+         <section id="contact">
+            <div class="contact-content">
+              <div class="contact-info">
+                <h2>Me Contacter</h2>
+                <div class="linkk">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yassine5.hamza5@gmail.com" target="_blank"><i class="bx bxl-gmail"></i>yassine5.hamza5@gmail.com</a>
+                  <a href="https://github.com/yassinehmza" target="_blank"><i class="bx bxl-github"></i> github.com/yassinehmza</a>
+                  <a href="https://www.linkedin.com/in/yassine-hamza-b3617031a" target="_blank" ><i class="bx bxl-linkedin-square" target="_blank"></i>yassine-hamza</a>
+                  <a href="https://wa.me/212657172426?text=Bonjour, je veux vous contacter." target="_blank" ><i class="bx bxl-whatsapp" target="_blank"></i>+212-657172426</a>
+                </div>
+                
+              </div>
+              <div class="arrow"><a href="#navbar"><i class="bx bxs-chevron-up"></i></a></div>
+            </div>
+          </section>
+          
+        <!-- Contact Section End -->
+    </main>
+    <footer id="footer">
+        <p>| &copy;  Réalisé avec amour par yassine-hamza |</p>
+        
+
+    </footer>
+
+    <script>
+        // Fonction pour vérifier si un élément est visible à l'écran
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Ajouter une classe lorsque l'élément est visible
+        function handleScrollAnimation() {
+            const aboutSection = document.querySelector('#about .about-content');
+            if (aboutSection && isElementInViewport(aboutSection)) {
+                aboutSection.classList.add('about-visible');
+            }
+        }
+
+        // Écoute l'événement de défilement
+        window.addEventListener('scroll', handleScrollAnimation);
+
+        // Appel initial pour vérifier si l'élément est déjà visible
+        handleScrollAnimation();
+    </script>
+
+<script>
+    // Fonction pour vérifier si un élément est dans la vue
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Gérer l'animation des images
+    function handleImageAnimation() {
+        const offersSection = document.querySelector('#offers');
+        if (offersSection && isElementInViewport(offersSection)) {
+            offersSection.classList.add('image-visible');
+        }
+    }
+
+    // Écoute pour les événements de défilement
+    window.addEventListener('scroll', handleImageAnimation);
+
+    // Vérification initiale
+    handleImageAnimation();
+</script>
+
+</body>
+</html>
